@@ -92,4 +92,4 @@ _**Note**: If you're running Windows, instead of typing "python painless.py" you
 See [LICENSE][2].
 
 [1]: http://hyde.github.io/
-[2]: blob/master/LICENSE
+[2]: https://github.com/gusg21/painless/blob/master/LICENSE
