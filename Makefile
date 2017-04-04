@@ -1,5 +1,5 @@
 install:
-	pip -r requirements.txt
+	pip install -r requirements.txt
 
 all:
 	python painless.py gen
