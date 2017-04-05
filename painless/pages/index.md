@@ -1,6 +1,7 @@
 ~import:top title=Home
 
 # painless
+##### [GitHub](http://github.com/gusg21/painless)
 A feather-weight static site generator like [hyde](http://hyde.github.io/) written in Python
 
 *************************
