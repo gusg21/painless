@@ -46,7 +46,7 @@ The `templates` folder is the reusable HTML code. This code can be referenced in
 
 ### Syntax
 
-The syntax for the input files (in the `pages` folder) are the same as your run-of-the-mill markdown. The additions are:
+The syntax for the input files (in the `pages` folder) are the same as your run-of-the-mill markdown (see [mistune][3]). The additions are:
 
 - Template Reference `~template`
 - Comments `$ blah blah blah`
@@ -96,3 +96,4 @@ See [LICENSE][2].
 
 [1]: http://hyde.github.io/
 [2]: https://github.com/gusg21/painless/blob/master/LICENSE
+[3]: http://github.com/lepture/mistune
