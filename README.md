@@ -1,4 +1,4 @@
-# painless
+# painless [![Build Status](https://travis-ci.org/gusg21/painless.svg?branch=master)](https://travis-ci.org/gusg21/painless)
 A feather-weight static site generator like [hyde][1] written in Python
 
 *************************
