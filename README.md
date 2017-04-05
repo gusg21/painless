@@ -46,7 +46,10 @@ The `templates` folder is the reusable HTML code. This code can be referenced in
 
 ### Syntax
 
-The syntax for the input files (in the `pages` folder) are the same as your run-of-the-mill markdown. The one difference is that `~[template name]` will replace the line with the respective HTML template. For example:
+The syntax for the input files (in the `pages` folder) are the same as your run-of-the-mill markdown. The additions are:
+
+- Template Reference `~template`
+- Comments `$ blah blah blah`
 
 **pages/index.md:**
 ```
