@@ -52,14 +52,14 @@ The syntax for the input files (in the `pages` folder) are the same as your run-
 - Comments `$ blah blah blah`
 
 **pages/index.md:**
-```
+```markdown
 ~header
 
 I'm markdown content! _Yay_!
 ```
 
 **templates/header.html:**
-```
+```HTML
 <h1>Site Name<h1>
 <div class="nav">
   <a href="about">About</a>
@@ -67,13 +67,29 @@ I'm markdown content! _Yay_!
 ```
 
 And the resulting index.html would be:
-```
+```HTML
 <h1>Site Name<h1>
 <div class="nav">
   <a href="about">About</a>
 </div>
 
 <p>I'm markdown content! <i>Yay</i>!</p>
+```
+
+A cool Jinja-like feature implemented in painless is argument passing. You can do this:
+
+```markdown
+~import:header arg=value
+```
+
+Template header.html:
+```HTML
+<p>{{ arg }}</p>
+```
+
+Result:
+```HTML
+<p>value</p>
 ```
 
 ### Testing your site
