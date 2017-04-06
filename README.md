@@ -77,7 +77,7 @@ I'm a span!
 
   ```
 <span class="foo">
-I'm a span!
+<p>I'm a span!</p>
 </span>
   ```
 
