@@ -1,7 +1,7 @@
 import os, mistune
 import lineparser
 
-def generate():
+def generate(outputDirectory):
     for fn in os.listdir('pages'):
         # make sure it's markdown
         if not fn.endswith(".md"):
@@ -12,11 +12,13 @@ def generate():
         	mdData = mdFile.read()
 
         # open the file we'll write to
-        with open("serve/" + fn[:fn.index(".")] + ".html", "w") as serveFile:
+        with open(outputDirectory + "/" + fn[:fn.index(".")] + ".html", "w") as serveFile:
             parsed = [] # the final list of lines in HTML
             for line in mdData.splitlines(): # iterate over lines
                 if line.startswith("~"): # if it's an import
                     parsed.append(lineparser.tilde(line))
+                elif line.startswith("."): # class line
+                    parsed.append(lineparser.dot(line))
                 elif line.startswith("$"): # it it's a comment
                     pass # We don't add the line
                 else:

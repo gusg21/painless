@@ -15,3 +15,14 @@ def tilde(line):
                 value = arg[arg.index("=")+1:] # after the =
                 data = data.replace("{{ " + key + " }}", value) # replace
         return data # return the template
+
+def dot(line):
+    if line.startswith(".."):
+        if line == "..":
+            return "</span>"
+        else:
+            return "<span class=\"" + line[2:] + "\">"
+    if line == ".":
+        return "</div>"
+    else:
+        return "<div class=\"" + line[1:] + "\">"
