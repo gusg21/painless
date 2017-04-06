@@ -66,7 +66,8 @@ I'm a div!
 </div>
   ```
 - Spans:
-  ```
+
+```
 ..foo
 I'm a span!
 ..
