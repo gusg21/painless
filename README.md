@@ -50,6 +50,34 @@ The syntax for the input files (in the `pages` folder) are the same as your run-
 
 - Template Reference `~template`
 - Comments `$ blah blah blah`
+- Divs:
+  ```
+.foo
+I'm a div!
+.
+  ```
+
+  Result:
+
+  ```
+<div class="foo">
+<p>I'm a div!</p>
+</div>
+  ```
+- Spans:
+  ```
+..foo
+I'm a span!
+..
+  ```
+
+  Results:
+
+  ```
+<span class="foo">
+I'm a span!
+</span>
+  ```
 
 **pages/index.md:**
 ```markdown
