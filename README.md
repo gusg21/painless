@@ -52,7 +52,7 @@ The syntax for the input files (in the `pages` folder) are the same as your run-
 - Comments `$ blah blah blah`
 - Divs:
 
-  ```
+```
 .foo
 I'm a div!
 .
