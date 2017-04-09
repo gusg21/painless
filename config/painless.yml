@@ -1,3 +1,4 @@
 options:
-  port: 8000
-  outputDirectory: "serve"
+  port: 8000 # Port to serve on (localhost:[port])
+  outputDirectory: "serve" # Directory to generate files to
+  reloadTime: 2 # Time between re-generating in seconds
