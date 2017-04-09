@@ -2,7 +2,7 @@ import argparse, sys, yaml
 import generate, serve
 
 '''
-A simple markdown based static site generator written in Python. Meant to make blog creation painless, hence the name.
+A simple markdown based static site generator written in Python. Meant to make site creation painless, hence the name.
 '''
 
 def main():
