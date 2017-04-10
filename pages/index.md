@@ -20,6 +20,8 @@ double dot (span) lines are working!
 
 If this is _formatted_, mistune is **working**!
 
+[Check Folder Structure Functionality](about)
+
 $ Comment: bottom.html and top.html are just some boilerplate stuff that
 $ use Bootstrap to make stuff look nice.
 ~import:bottom
