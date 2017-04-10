@@ -38,6 +38,10 @@ def dot(line):
 def parseTemplateLine(line, path): # We need path for some static functions
     config = yaml.load(open("config/painless.yml", "r").read())
 
+    for name in config["customValues"]:
+        value = config["customValues"][name]
+        line = line.replace("[[ " + name + " ]]", value)
+
     line = line.replace("[[ time ]]", datetime.datetime.now().strftime(config["options"]["timeFormat"]))
     line = line.replace("[[ branding ]]", "<p><i>Built <a href='http://github.com/gusg21/painless'>painlessly</a>.</i></p>")
 

@@ -3,3 +3,6 @@ options:
   outputDirectory: "serve" # Directory to generate files to
   reloadTime: 2 # Time between re-generating in seconds
   timeFormat: "%A, %b %d %I:%M"
+
+customValues:
+  demo: "If you can see this text, custom values are working!"
