@@ -1,4 +1,4 @@
-import os, mistune
+import os
 import lineparser
 
 def generate(outputDirectory):
@@ -30,7 +30,7 @@ def generate(outputDirectory):
                 elif line.startswith("$"): # it it's a comment
                     pass # We don't add the line
                 else:
-                    parsed.append(mistune.markdown(line)) # parse as markdown
+                    parsed.append(lineparser.default(line)) # parse as markdown
 
             parsed = "\n".join(parsed) # turn the lines into a string
             serveFile.truncate(0) # empty file
