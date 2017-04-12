@@ -63,6 +63,5 @@ def replaceSpecials(line, name, value, BRACKETS="["):
 
 def default(line): # do to all lines in markdown
     line = parseLine(line)
-    print(line)
     line = mistune.markdown(line)
     return line
