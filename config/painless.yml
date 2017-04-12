@@ -6,3 +6,4 @@ options:
 
 customValues:
   demo: "If you can see this text, custom values are working!"
+  looseBrackets: "If you can see this, loose brackets are working!"

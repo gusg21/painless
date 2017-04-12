@@ -20,6 +20,8 @@ double dot (span) lines are working!
 
 If this is _formatted_, mistune is **working**!
 
+[[looseBrackets]]
+
 [Check Folder Structure Functionality](about)
 
 $ Comment: bottom.html and top.html are just some boilerplate stuff that
