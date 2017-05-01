@@ -137,6 +137,22 @@ And visit <http://localhost:8000/> in your browser of choice.
 
 _**Note**: If you're running Windows, instead of typing "python painless.py" you can type "painless", and it will run painless.bat instead._
 
+## API
+
+There is a simple API coded into painless, which you can access by importing painless.py.
+
+```python
+# All API functions are prefixed with "API_".
+
+import painless
+
+print(painless.API_getVersion()) # get painless' version
+
+painless.API_serve() # uses config variables
+painless.API_serve(PORT=1234) # or provide your own
+
+```
+
 ## License
 
 See [LICENSE][2].

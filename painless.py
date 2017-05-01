@@ -29,5 +29,18 @@ def main():
         print("Unknown command: " + args.command)
         print("Command is one of: gen, serve, version")
 
+# API Interfaces
+
+# Functions
+def API_generate(outputDirectory=config["options"]["outputDirectory"]):
+    generate.generate(outputDirectory)
+
+def API_serve(PORT=config["options"]["port"], SERVE=config["options"]["outputDirectory"]):
+    serve.serve(PORT, SERVE)
+
+# Info
+def API_getVersion():
+    return VERSION
+
 if __name__ == '__main__':
     main()
