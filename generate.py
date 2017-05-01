@@ -27,8 +27,9 @@ def generate(outputDirectory):
                     parsed.append(lineparser.tilde(line))
                 elif line.startswith("."): # class line
                     parsed.append(lineparser.dot(line))
-                elif line.startswith("$"): # it it's a comment
-                    pass # We don't add the line
+                elif "$" in line: # it it's a comment
+                    commentless = line[:line.index("$")]
+                    parsed.append(lineparser.default(commentless))
                 else:
                     parsed.append(lineparser.default(line)) # parse as markdown
 

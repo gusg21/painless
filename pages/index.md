@@ -18,6 +18,8 @@ yellow
 ..
 double dot (span) lines are working!
 
+**moo** $ If you can see this, midline comments are working
+
 If this is _formatted_, mistune is **working**!
 
 [[looseBrackets]]
